@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="onmousedown="return false;" onselectstart="return false;">
+    <header class="mt-5">
+        <h1 class="font-serif text-5xl">Memory Game</h1>
+        <div class="flex justify-center gap-20 mt-5">
+            <button id="restart" class="w-24 h-7 bg-[#0B192C] text-[#FF6500] rounded-xl">Restart</button>
+            <div id="score" class="score rounded-xl bg-[#0B192C] w-24 h-7 text-[#FF6500] text-xl content-center">0</div>
+    </header>
+    <div id="game_board" class="grid grid-cols-[100px_minmax(100px,_.5fr)_100px] justify-items-center justify-center p-5"></div>
+    <script src="script.js"></script>
+</body>
+</html>
